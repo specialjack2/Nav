@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>京东效果</title>
+		<style type="text/css">
+			*{margin: 0; padding: 0;}
+			.box{
+				width: 1000px;
+				height: 474px;
+				margin: 50px auto 0;
+			}
+			.box dl{
+				width: 198px;
+				height: 235px;
+				border: 1px solid gray;
+				float: left;
+				margin: -1px 0 0 -1px;
+			}
+			
+			.box dl dt{
+				height: 165px;
+				border-bottom: 1px solid #656565;
+				text-align: center;
+				/* background-color: red; */
+			}
+			/* i标签和a标签,参考线,居中设置技巧 
+			 一个盒子你的图片,想把图片放到盒子的正中央,可以通过设置margin的方法, 
+			 但是margin的话可能会超出盒子的边界打不到效果,
+			 而且, 京东效果中, 有很多不一样大小size的图片都要放到他们box的正中央的话, 
+			 这种情况我们就不可能逐个去调整每个盒子里面图片的margin数值. 
+			 所以,解决方法为, 
+			 1, 盒子里面写两个标签, img 和 i标签, i标签作为参考线
+			 2, i标签和img都 display成 inline-block,(必须是inline-block,行内块元素同时支持text-alig和vertical-align. block是不支持的.)
+			 3, 盒子里面两个标签的vertical-align: middle,  img和i都有中线,, 都按照中线居中
+			 4, 参考标签没有width所以不显示, 但是需要有一个和父类盒子同等的height,
+			 所以i标签的height:100% ;
+			 5, 父类盒子的text-align:center, 把line-block的东西弄成水平居中. 
+			 
+			*/
+			.box dl dt a{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.box dl dt i{
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+				width: 0px;
+			}
+			
+			.box dl dd p{
+				padding-left: 10px;
+				height: 34px;
+				line-height: 34px;
+				
+			}
+			.box dl dd span{
+				padding-left: 10px;
+				text-align: center;
+				line-height: 36px;
+				font-size: 12px;
+				color: red;
+			}
+			.box a{
+				text-decoration: none;
+				font-size: 14px;
+				color: gray;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="box">
+			<dl>
+				<dt>
+					<a href="#"><img src="img/shop1.png" ></a>
+					<i></i>
+				</dt>
+				<dd>
+					<p> <a href="#">优步智能跑步机</a> </p>
+					<span>$2099.00</span>
+				</dd>
+				
+			</dl>
+			<dl>
+				<dt>
+					<a href="#"><img src="img/shop2.png" ></a>
+					<i></i>
+				</dt>
+				<dd>
+					<p><a href="#">优步智能跑步机</a></p>
+					<span>$2099.00</span>
+				</dd>
+				
+			</dl>
+			<dl>
+				<dt>
+					<a href="#"><img src="img/shop3.png" ></a>
+					<i></i>
+				</dt>
+				<dd>
+					<p><a href="#">优步智能跑步机</a></p>
+					<span>$2099.00</span>
+				</dd>
+			
+			</dl>
+			<dl>
+				<dt>
+					<a href="#"><img src="img/shop4.png" ></a>
+					<i></i>
+				</dt>
+				<dd>
+					<p><a href="#">优步智能跑步机</a></p>
+					<span>$2099.00</span>
+				</dd>
+				
+			</dl>
+			<dl>
+				<dt>
+					<a href="#"><img src="img/shop1.png" ></a>
+					<i></i>
+				</dt>
+				<dd>
+					<p><a href="#">优步智能跑步机</a></p>
+					<span>$2099.00</span>
+				</dd>
+				
+			</dl>
+			<dl>
+				<dt>
+					<a href="#"><img src="img/shop2.png" ></a>
+					<i></i>
+				</dt>
+				<dd>
+					<p><a href="#">优步智能跑步机</a></p>
+					<span>$2099.00</span>
+				</dd>
+			
+			</dl>
+			<dl>
+				<dt>
+					<a href="#"><img src="img/shop3.png" ></a>
+					<i></i>
+				</dt>
+				<dd>
+					<p><a href="#">优步智能跑步机</a></p>
+					<span>$2099.00</span>
+				</dd>
+				
+			</dl>
+			<dl>
+				<dt>
+					<a href="#"><img src="img/shop4.png" ></a>
+					<i></i>
+				</dt>
+				<dd>
+					<p><a href="#">优步智能跑步机</a></p>
+					<span>$2099.00</span>
+				</dd>
+				
+			</dl>
+			<dl>
+				<dt>
+					<a href="#"><img src="img/shop2.png" ></a>
+					<i></i>
+				</dt>
+				<dd>
+					<p><a href="#">优步智能跑步机</a></p>
+					<span>$2099.00</span>
+				</dd>
+				
+			</dl>
+			<dl>
+				<dt>
+					<a href="#"><img src="img/shop3.png" ></a>
+					<i></i>
+				</dt>
+				<dd>
+					<p><a href="#">优步智能跑步机</a></p>
+					<span>$2099.00</span>
+				</dd>
+				
+			</dl>
+		</div>
+	</body>
+</html>
